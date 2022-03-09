@@ -29,9 +29,11 @@ const orders = [
   },
 ];
 
+// Sum of total from all orders
 const totals = orders.reduce((total, currItem) => (total += currItem.total), 0);
 console.log(totals); // prints 300
 
+// Sum of total from orders delivered
 const totalForCompletedOrders = orders
   .map((order) => (order.delivered ? order.total : 0)) // gets this array [60, 0, 50, 30, 20]
   .reduce((total, currItem) => (total += currItem));
