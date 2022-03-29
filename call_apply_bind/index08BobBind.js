@@ -3,8 +3,8 @@
 // without strict mode "this" will default to the Global/Window object
 // 'use strict';
 
-let bob = function (num, str, x) {
-  console.log("bob", num, str, this, x);
+let bob = function (num, str) {
+  console.log("bob", num, str, this);
   return true;
 };
 
@@ -21,4 +21,4 @@ let bill = {
 console.log("Bob Bind function call with bill object");
 bob.bind(bill, 5, "Hasta la vista"); // prints nothing because only prepare to be called
 let fred = bob.bind(bill, 5, "Hasta la vista");
-fred("x"); // bob 5 Hasta las vista billObject
+fred(); // bob 5 Hasta las vista billObject
