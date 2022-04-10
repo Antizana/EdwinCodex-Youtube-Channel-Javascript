@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <h1 class="content">JavaScript Course</h1>
+    <div class="content">
+      <span class="content">Learning basics in JavaScript!</span>
+    </div>
+  </body>
+  <script>
+    console.log(".content: ", document.querySelector(".content")); // prints the first content element
+    console.log("div.content: ", document.querySelector("div.content")); // prints the entire div element and span child element
+    console.log("span.content: ", document.querySelector("span.content")); // prints the span element
+    console.log("div.span: ", document.querySelector("div.span")); // prints null, div has not a span class
+    console.log("div.span: ", document.querySelector("div span")); // prints the span element
+  </script>
+</html>
