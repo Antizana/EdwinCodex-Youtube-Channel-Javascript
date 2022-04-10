@@ -1,3 +1,6 @@
+/**
+ * What is printed to the console
+ */
 let dog = {
   sound: "meows",
   bark() {
@@ -18,4 +21,11 @@ console.log(dogSound);
     console.log(this.sound);
   }
   Where the `this` keyword is referring to nothing.
+ */
+
+/**
+ * bark
+ * Nothing is printed to the console.
+ * undefined
+ * meows
  */
