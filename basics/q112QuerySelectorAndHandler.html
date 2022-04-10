@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div style="background-color: #999; padding: 1vw" id="A">
+      <div style="background-color: #bbb; padding: 1vw" id="B">
+        <div style="background-color: #ddd; padding: 1vw" id="C">
+          Click Here
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelectorAll("div").forEach((e) => {
+      e.onclick = (e) => console.log(e.currentTarget.id);
+    });
+  </script>
+</html>
+
+<!-- Clicking on "Click Here" will print "CBA" to the console. -->
