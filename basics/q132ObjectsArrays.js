@@ -132,5 +132,5 @@ newObjs.sort((a, b) => a.customerId - b.customerId);
 
 console.log(newObjs); // [ { customerId: 1, name: 'John', age: 31, city: New York' }, { customerId: 2, name: 'Jane', age: 25 }, { customerId: 3, name: 'Anne', age: 23 }]
 
-newObjs.sort((a, b) => a.name.localeCompare(b.name));
-console.log(newObjs); // [ { customerId: 3, name: 'Anne', age: 23 }, { customerId: 2, name: 'Jane', age: 25 },  { customerId: 1, name: 'John', age: 31, city: New York' }]
+newObjs.sort((a, b) => a.name.localeCompare(b.name) * -1);
+console.log(newObjs); // [ { customerId: 1, name: 'John', age: 31, city: 'New York' }, { customerId: 2, name: 'Jane', age: 25 },  { customerId: 3, name: 'Anne', age: 23 } ]
